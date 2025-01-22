@@ -20,6 +20,9 @@ header {
   display: flex;
   justify-content: space-between;
   height: 3.25em;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.095);
 }
 
 #logo {
@@ -85,7 +88,6 @@ header ul li a:hover {
 
 .containner-col-introduction {
   width: 100%;
-  height: 60%;
 }
 
 .title-col-introduction {
@@ -99,7 +101,7 @@ header ul li a:hover {
 }
 
 .title-col-introduction h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .title-col-introduction h1 {
@@ -175,8 +177,8 @@ header ul li a:hover {
 }
 
 .col-Elearning-content {
-  width: 25%;
-  margin: 0 3%;
+  width: 31%;
+  margin: 0 1%;
   margin-bottom: 2%;
   transition: linear 0.2s;
   background-size: cover;
@@ -190,6 +192,8 @@ header ul li a:hover {
   transition: linear 0.2s;
   background-image: url("../image/tnhn\ 10.webp");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -200,6 +204,8 @@ header ul li a:hover {
   transition: linear 0.2s;
   background-image: url("../image/tnhn11.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -210,6 +216,8 @@ header ul li a:hover {
   transition: linear 0.2s;
   background-image: url("../image/tnhn12.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -280,6 +288,9 @@ header ul li a:hover {
 
 /* Mobile & Tablet: width < 1024px */
 @media only screen and (max-width: 64em) {
+  .grid-introduction {
+    height: auto;
+  }
   .nav_pc {
     display: none;
   }
@@ -378,6 +389,10 @@ header ul li a:hover {
 
 /* Mobile: width < 740px */
 @media only screen and (max-width: 46.1875em) {
+  .grid-introduction {
+    height: auto;
+    margin-top: 50px;
+  }
   .col-1-introduction {
     width: 100%;
   }
@@ -402,8 +417,12 @@ header ul li a:hover {
     width: 100%;
   }
 
+  .Elearning-title h1 {
+    font-size: 43px;
+  }
+
   .col-Elearning-content {
-    width: 43%;
+    width: 48%;
   }
 
   .col10-Elearning-content {
